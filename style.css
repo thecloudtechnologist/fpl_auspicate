@@ -6,10 +6,18 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+html {
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
 /* body{
   overflow: hidden;
 } */
-/* body { position: absolute; } */
 .sidebar{
   position: fixed;
   top: 0;
@@ -214,7 +222,8 @@
 }
 .home-section{
   position: relative;
-  background: #E4E9F7;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-repeat: repeat-x;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -267,12 +276,5 @@
   .sidebar.close ~ .home-section{
     left: 78px;
     width: calc(100% - 78px);
-  }
-
-  /* Customisations by FPL Auspicate */
-  img {
-    display: block;
-    margin: 0 auto;
-    width: 60%;
   }
 }
