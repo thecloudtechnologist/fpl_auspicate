@@ -8,6 +8,7 @@
 }
 body{
   overflow: hidden;
+  overflow-x: hidden;
 }
 .sidebar{
   position: fixed;
@@ -241,6 +242,11 @@ body{
 .home-section .home-content .text{
   font-size: 26px;
   font-weight: 600;
+}
+
+.container {
+  min-width: 100%;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 400px){
