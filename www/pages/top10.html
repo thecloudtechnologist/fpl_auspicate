@@ -4,8 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title> FPL Predictions & Analytics | FPL auspicate </title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/highlights.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +18,12 @@
     </div>
     <ul class="nav-links">
       <li>
-        <a href="index.html">
+        <a href="../../index.html">
           <i class='bx bx-home-circle bx-border-circle' ></i>
           <span class="link_name">Home</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="index.html">Home</a></li>
+          <li><a class="link_name" href="../../index.html">Home</a></li>
         </ul>
       </li>
       <li>
@@ -37,9 +36,9 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Predictions</a></li>
-          <li><a href="www/pages/captain_picks.html">Captain</a></li>
-          <li><a href="www/pages/top10.html">Gameweek Top-10</a></li>
-          <li><a href="#">All</a></li>
+          <li><a href="./captain_picks.html">Captain</a></li>
+          <li><a href="./top10.html">Gameweek Top-10</a></li>
+          <li><a href="./predictions.html">All</a></li>
         </ul>
       </li>
       <li>
@@ -52,8 +51,9 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Team Analytics</a></li>
-          <li><a href="#">XGvsAG</a></li>
-          <li><a href="#">Form</a></li>
+          <li><a href="./team-xg-ag.html">XGvsAG</a></li>
+          <li><a href="./team_form.html">Form</a></li>
+          <li><a href="./team_form.html">Performance</a></li>
         </ul>
       </li>
       <li>
@@ -66,7 +66,7 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Player Analytics</a></li>
-          <li><a href="www/pages/player_form.html">Form</Form></a></li>
+          <li><a href="./player_form.html">Form</Form></a></li>
           <li><a href="#">Forwards</a></li>
           <li><a href="#">Midfield</a></li>
           <li><a href="#">Defenders</a></li>
@@ -83,14 +83,14 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">FDR</a></li>
-          <li><a href="./www/pages/fdr_3.html">Next-3 GWs</a></li>
-          <li><a href="./www/pages/fdr_5.html">Next-5 GWs</a></li>
+          <li><a href="./fdr_3.html">Next-3 GWs</a></li>
+          <li><a href="./fdr_5.html">Next-5 GWs</a></li>
         </ul>
       </li>
   <li>
     <div class="profile-details">
       <div class="profile-content">
-        <img src="assets/image/profile.png" alt="profileImg">
+        <img src="../../assets/image/profile.png" alt="profileImg">
       </div>
       <div class="name-job">
         <div class="profile_name">Joseph</div>
@@ -101,56 +101,20 @@
 </ul>
   </div>
 <!-- END MENU -->
-<!-- PAGE CUSTOMISATION BEGIN -->
   <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu' ></i>
       <span class="text">
-        <h1>Welcome to FPL Auspicate</h1>
-        <p>Whats Available on this site? </p>
+        <h2>Top-10 players for this Gameweek by position</h2>
+        <img src="../images/FWD.png" alt="Forwards" style="width:45vw;height:70vh;border: 5px solid #c5c5c5;">
+        <img src="../images/MID.png" alt="Captain" style="width:45vw;height:70vh;border: 5px solid #c5c5c5;"">
+        <img src="../images/DEF.png" alt="Captain" style="width:45vw;height:70vh;border: 5px solid #c5c5c5;"">
+        <img src="../images/GKP.png" alt="Captain" style="width:45vw;height:70vh;border: 5px solid #c5c5c5;"">
       </span>
-        <div class="row">
-          <div class="column"> <!-- style="background-color:#FFB695;"-->
-            <h2>Weekly AI Predictions</h2>
-            <img src="assets/image/AI.png" alt="AI Predictions" style="width: 7vw;">
-            <ul style="padding: 10px">
-              <li >Captain picks</li>
-              <li>Top-10 players by each position</li>
-            </ul>
-            
-          </div>
-          <div class="column"> <!-- style="background-color:#FFB695;"-->
-            <h2>Team Analytics</h2>
-            <img src="assets/image/team_charts.png" alt="Team stats" style="width: 7vw;">
-            <ul style="padding: 10px">
-              <li >Expected vs Actual - Goals</li>
-              <li>Over and under performing teams</li>
-            </ul>
-          </div>
-          <div class="column"> <!-- style="background-color:#FFB695;"-->
-            <h2>Player Analytics</h2>
-            <img src="assets/image/player_charts.png" alt="Player stats" style="width: 7vw;">
-            <ul style="padding: 10px">
-              <li >In form players - 10 for each position</li>
-              <li>Forward stats - Expected vs Actual - Goals, Assists, involvements</li>
-              <li>Midfielders stats - Expected vs Actual - Goals, Assists, involvements</li>
-              <li>Defenders stats - Expected vs Actual - Goals, Assists, involvements, clean sheets, goals conceeded</li>
-              <li>Goal Keeper stats - Expected vs Actual - clean sheets, goals conceeded</li>
-            </ul>
-          </div>
-          <div class="column"> <!-- style="background-color:#FFB695;"-->
-            <h2>FDR</h2>
-            <img src="assets/image/fdr.png" alt="FDR" style="width: 7vw;">
-            <ul style="padding: 10px"></ul>
-              <li >Fixture difficulty rating sorted for the next 3 Gameweeks</li>
-              <li >Fixture difficulty rating sorted for the next 5 Gameweeks</li>
-            </ul>
 
-          </div>
-        </div>
     </div>
   </section>
-<!-- PAGE CUSTOMISATION END -->
-<script src="assets/js/script.js"></script>
+  <script src="../../assets/js/script.js"></script>
+
 </body>
 </html>

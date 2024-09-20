@@ -8,11 +8,8 @@
 }
 
 html {
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  background-repeat: repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 
 /* body{
@@ -74,7 +71,8 @@ html {
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li:hover{
-  background: #0181f9;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
 .sidebar .nav-links li .iocn-link{
   display: flex;
@@ -118,7 +116,9 @@ html {
 .sidebar .nav-links li .sub-menu{
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: #0181f9;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  /* background: #8EC5FC; */
   display: none;
 }
 .sidebar .nav-links li.showMenu .sub-menu{
@@ -127,9 +127,10 @@ html {
 .sidebar .nav-links li .sub-menu a{
   color: #fff;
   font-size: 15px;
+  font-weight: bold;
   padding: 5px 0;
   white-space: nowrap;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: all 0.3s ease;
 }
 .sidebar .nav-links li .sub-menu a:hover{
@@ -158,6 +159,7 @@ html {
 }
 .sidebar.close .nav-links li .sub-menu .link_name{
   font-size: 18px;
+  font-weight: bold;
   opacity: 1;
   display: block;
 }
@@ -222,8 +224,8 @@ html {
 }
 .home-section{
   position: relative;
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  background-repeat: repeat-x;
+  /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-repeat: repeat-x; */
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -235,7 +237,7 @@ html {
   width: calc(100% - 78px);
 }
 .home-content{
-  display: flex;
+  /* display: flex; */
   align-items: center;
   flex-wrap: wrap;
 }
