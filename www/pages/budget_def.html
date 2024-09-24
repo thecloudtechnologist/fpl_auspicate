@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> FPL Predictions & Analytics | FPL Auspicate </title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/slick.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-football bx-spin'></i>
+      <span class="logo_name">FPL Aspicate</span>
+    </div>
+    <ul class="nav-links">
+<!-- Home page -->
+<li>
+  <a href="../../index.html">
+    <i class='bx bx-home-circle bx-border-circle bx-tada-hover' ></i>
+    <span class="link_name">Home</span>
+  </a>
+  <ul class="sub-menu blank">
+    <li><a class="link_name" href="../../index.html">Home</a></li>
+  </ul>
+</li>
+<!-- Predictions section -->
+<li>
+  <div class="iocn-link">
+    <a href="#">
+      <i class='bx bx-chip bx-tada-hover' ></i>
+      <span class="link_name">Predictions</span>
+    </a>
+    <i class='bx bxs-chevron-down arrow bx-fade-down-hover' ></i>
+  </div>
+  <ul class="sub-menu">
+    <li><a class="link_name" href="#">Predictions</a></li>
+    <li><a href="./captain_picks.html"><i class='bx bxs-image'></i>Captain</a></li>
+    <li><a href="./top10.html"><i class='bx bxs-image'></i>Top-10 by position</a></li>
+    <li><a href="./predictions.html"><i class='bx bx-scatter-chart'></i>All</a></li>
+  </ul>
+</li>
+<!-- Team Analytics -->
+<li>
+  <div class="iocn-link">
+    <a href="#">
+      <i class='bx bx-group bx-tada-hover' ></i>
+      <span class="link_name">Team Analytics</span>
+    </a>
+    <i class='bx bxs-chevron-down arrow bx-fade-down-hover' ></i>
+  </div>
+  <ul class="sub-menu">
+    <li><a class="link_name" href="#">Team Analytics</a></li>
+    <li><a href="./team_form.html"><i class='bx bx-table'></i>form</a></li>
+    <li><a href="./team-attack.html"><i class='bx bx-scatter-chart' ></i>Attacking stats</a></li>
+    <li><a href="./team-defense.html"><i class='bx bx-scatter-chart' ></i>Defensive stats</a></li>
+    <li><a href="./team-attack-perf.html"><i class='bx bx-scatter-chart' ></i>Attacking performance</a></li>
+    <li><a href="./team-defense-perf.html"><i class='bx bx-scatter-chart' ></i>Defensive performance</a></li>
+  </ul>
+</li>
+<!-- Player Analytics -->
+<li>
+  <div class="iocn-link">
+    <a href="#">
+      <i class='bx bxs-analyse bx-tada-hover' ></i>
+      <span class="link_name">Player Analytics</span>
+    </a>
+    <i class='bx bxs-chevron-down arrow bx-fade-down-hover' ></i>
+  </div>
+  <ul class="sub-menu">
+    <li><a class="link_name" href="#">Player Analytics</a></li>
+    <li><a href="./player_form.html">Form</Form></a></li>
+    <li><a href="./XGI.html"><i class='bx bx-scatter-chart' ></i>Expected Goal involvements (XGI)</a></li>
+    <li><a href="./PPM.html"><i class='bx bx-scatter-chart' ></i>Points per Million (£)</a></li>
+    <li><a href="./fwd-xgi-analysis.html"><i class='bx bx-scatter-chart' ></i>Forwards - XGI analysis</a></li>
+    <li><a href="./mid-xgi-analysis.html"><i class='bx bx-scatter-chart' ></i>Midfielder - XGI analysis</a></li>
+    <li><a href="./def-xgi-analysis.html"><i class='bx bx-scatter-chart' ></i>Defenders - XGI analysis</a></li>
+    <li><a href="./FWD_stats_table.html"><i class='bx bx-table'></i>Forwards stats</a></li>
+    <li><a href="./MID_stats_table.html"><i class='bx bx-table'></i>Midfielder stats</a></li>
+    <li><a href="./DEF_stats_table.html"><i class='bx bx-table'></i>Defenders stats</a></li>
+    <li><a href="./GKP_stats_table.html"><i class='bx bx-table'></i>Goal Keepers stats</a></li>
+    
+  </ul>
+</li>
+<!-- Budget players -->
+<li>
+  <div class="iocn-link">
+    <a href="#">
+      <i class='bx bxs-coin-stack bx-tada-hover'></i>
+      <span class="link_name">Budget&Cheap players</span>
+    </a>
+    <i class='bx bxs-chevron-down arrow bx-fade-down-hover' ></i>
+  </div>
+  <ul class="sub-menu">
+    <li><a class="link_name" href="#">Budget&Cheap players</a></li>
+    <li><a href="./budget_fwd.html"><i class='bx bx-table'></i>Forwards under £6.1</a></li>
+    <li><a href="./budget_mid.html"><i class='bx bx-table'></i>Midfielders under £6.6</a></li>
+    <li><a href="./budget_def.html"><i class='bx bx-table'></i>Defenders under £4.6</a></li>
+    <li><a href="./cheap_fwd.html"><i class='bx bx-table'></i>Forwards under £4.6</a></li>
+    <li><a href="./cheap_mid.html"><i class='bx bx-table'></i>Midfielders under £4.6</a></li>
+    <li><a href="./cheap_def.html"><i class='bx bx-table'></i>Defenders under £4.1</a></li>
+  </ul>
+</li>
+<!-- FDR -->
+<li>
+  <div class="iocn-link">
+    <a href="#">
+      <i class='bx bx-group bx-tada-hover' ></i>
+      <span class="link_name">FDR</span>
+    </a>
+    <i class='bx bxs-chevron-down arrow bx-fade-down-hover' ></i>
+  </div>
+  <ul class="sub-menu">
+    <li><a class="link_name" href="#">FDR</a></li>
+    <li><a href="./fdr_3.html"><i class='bx bxs-image'></i>Next-3 GWs</a></li>
+    <li><a href="./fdr_5.html"><i class='bx bxs-image'></i>Next-5 GWs</a></li>
+  </ul>
+</li>
+<!-- Profile section - dont change   -->
+<li>
+  <div class="profile-details">
+    <div class="profile-content">
+      <img src="../../assets/image/profile.png" alt="profileImg">
+    </div>
+    <div class="name-job">
+      <div class="profile_name">Joseph</div>
+    </div>
+    <i class='bx bx-log-out' ></i>
+  </div>
+</li>
+</ul>
+  </div>
+
+
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+        <div class="table-wrap">
+          <!-- BEGIN TABLE -->
+          <table class="sortable-theme-finder" data-sortable> <caption><h2>Budget Defender under £5.1</h2><br><sup>Click on any column to sort</sup></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th>Name</th>
+      <th>team</th>
+      <th>now_cost</th>
+      <th>selected_by_%</th>
+      <th>bps</th>
+      <th>%_of_season_played</th>
+      <th>next_match</th>
+      <th>next_3_avg_FDRs</th>
+      <th>next_5_avg_FDRs</th>
+      <th>goals_scored</th>
+      <th>assists</th>
+      <th>goal_involvements</th>
+      <th>expected_goal_involvements</th>
+      <th>gi_vs_xgi</th>
+      <th>expected_goal_involvements_per_90</th>
+      <th>clean_sheets</th>
+      <th>goals_conceded</th>
+      <th>expected_goals_conceded</th>
+      <th>gc_vs_xgc</th>
+      <th>total_points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Romero</td>
+      <td>Spurs</td>
+      <td>5.1</td>
+      <td>10.2</td>
+      <td>107</td>
+      <td>100.00</td>
+      <td>[Man Utd, Away]</td>
+      <td>2.33</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1.14</td>
+      <td>-0.14</td>
+      <td>0.23</td>
+      <td>1</td>
+      <td>5</td>
+      <td>5.12</td>
+      <td>-0.12</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Mitchell</td>
+      <td>Crystal Palace</td>
+      <td>4.9</td>
+      <td>1.7</td>
+      <td>75</td>
+      <td>99.56</td>
+      <td>[Everton, Away]</td>
+      <td>3.00</td>
+      <td>2.8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.09</td>
+      <td>-0.09</td>
+      <td>0.22</td>
+      <td>1</td>
+      <td>7</td>
+      <td>8.18</td>
+      <td>-1.18</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Sugawara</td>
+      <td>Southampton</td>
+      <td>4.5</td>
+      <td>0.3</td>
+      <td>62</td>
+      <td>85.78</td>
+      <td>[Bournemouth, Away]</td>
+      <td>3.00</td>
+      <td>3.2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1.06</td>
+      <td>-0.06</td>
+      <td>0.25</td>
+      <td>0</td>
+      <td>9</td>
+      <td>9.53</td>
+      <td>-0.53</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Milenković</td>
+      <td>Nott'm Forest</td>
+      <td>4.5</td>
+      <td>0.3</td>
+      <td>54</td>
+      <td>80.00</td>
+      <td>[Fulham, Home]</td>
+      <td>2.67</td>
+      <td>2.4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.00</td>
+      <td>-1.00</td>
+      <td>0.24</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2.76</td>
+      <td>0.24</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Digne</td>
+      <td>Aston Villa</td>
+      <td>4.6</td>
+      <td>8.0</td>
+      <td>71</td>
+      <td>78.00</td>
+      <td>[Ipswich, Away]</td>
+      <td>2.67</td>
+      <td>2.8</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.95</td>
+      <td>1.05</td>
+      <td>0.24</td>
+      <td>0</td>
+      <td>6</td>
+      <td>3.51</td>
+      <td>2.49</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>De Ligt</td>
+      <td>Man Utd</td>
+      <td>5.0</td>
+      <td>4.7</td>
+      <td>84</td>
+      <td>58.67</td>
+      <td>[Spurs, Home]</td>
+      <td>3.00</td>
+      <td>2.8</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.95</td>
+      <td>0.05</td>
+      <td>0.32</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4.09</td>
+      <td>-0.09</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Dalot</td>
+      <td>Man Utd</td>
+      <td>5.0</td>
+      <td>9.2</td>
+      <td>125</td>
+      <td>100.00</td>
+      <td>[Spurs, Home]</td>
+      <td>3.00</td>
+      <td>2.8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.82</td>
+      <td>0.18</td>
+      <td>0.16</td>
+      <td>3</td>
+      <td>5</td>
+      <td>6.39</td>
+      <td>-1.39</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Lewis</td>
+      <td>Man City</td>
+      <td>4.7</td>
+      <td>10.5</td>
+      <td>56</td>
+      <td>70.00</td>
+      <td>[Newcastle, Away]</td>
+      <td>2.67</td>
+      <td>2.4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.80</td>
+      <td>0.20</td>
+      <td>0.23</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2.95</td>
+      <td>0.05</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Aït-Nouri</td>
+      <td>Wolves</td>
+      <td>4.4</td>
+      <td>1.8</td>
+      <td>2</td>
+      <td>85.33</td>
+      <td>[Liverpool, Home]</td>
+      <td>3.67</td>
+      <td>3.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.80</td>
+      <td>0.20</td>
+      <td>0.19</td>
+      <td>0</td>
+      <td>13</td>
+      <td>5.40</td>
+      <td>7.60</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Davis</td>
+      <td>Ipswich</td>
+      <td>4.5</td>
+      <td>2.0</td>
+      <td>55</td>
+      <td>100.00</td>
+      <td>[Aston Villa, Home]</td>
+      <td>2.33</td>
+      <td>2.2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.80</td>
+      <td>0.20</td>
+      <td>0.16</td>
+      <td>1</td>
+      <td>8</td>
+      <td>11.09</td>
+      <td>-3.09</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Martinez</td>
+      <td>Man Utd</td>
+      <td>4.5</td>
+      <td>5.1</td>
+      <td>81</td>
+      <td>96.89</td>
+      <td>[Spurs, Home]</td>
+      <td>3.00</td>
+      <td>2.8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.78</td>
+      <td>-0.78</td>
+      <td>0.16</td>
+      <td>3</td>
+      <td>5</td>
+      <td>6.39</td>
+      <td>-1.39</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Tete</td>
+      <td>Fulham</td>
+      <td>4.5</td>
+      <td>0.4</td>
+      <td>28</td>
+      <td>100.00</td>
+      <td>[Nott'm Forest, Away]</td>
+      <td>3.33</td>
+      <td>3.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.77</td>
+      <td>-0.77</td>
+      <td>0.15</td>
+      <td>0</td>
+      <td>5</td>
+      <td>5.79</td>
+      <td>-0.79</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Mazraoui</td>
+      <td>Man Utd</td>
+      <td>4.6</td>
+      <td>15.9</td>
+      <td>96</td>
+      <td>94.00</td>
+      <td>[Spurs, Home]</td>
+      <td>3.00</td>
+      <td>2.8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.66</td>
+      <td>0.34</td>
+      <td>0.14</td>
+      <td>3</td>
+      <td>5</td>
+      <td>6.33</td>
+      <td>-1.33</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Colwill</td>
+      <td>Chelsea</td>
+      <td>4.5</td>
+      <td>2.3</td>
+      <td>80</td>
+      <td>100.00</td>
+      <td>[Brighton, Home]</td>
+      <td>3.00</td>
+      <td>3.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.66</td>
+      <td>-0.66</td>
+      <td>0.14</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5.76</td>
+      <td>-0.76</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>N.Williams</td>
+      <td>Nott'm Forest</td>
+      <td>4.5</td>
+      <td>0.6</td>
+      <td>41</td>
+      <td>72.22</td>
+      <td>[Fulham, Home]</td>
+      <td>2.67</td>
+      <td>2.4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>-0.61</td>
+      <td>0.17</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2.74</td>
+      <td>-0.74</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Tarkowski</td>
+      <td>Everton</td>
+      <td>4.8</td>
+      <td>1.1</td>
+      <td>-8</td>
+      <td>100.00</td>
+      <td>[Crystal Palace, Home]</td>
+      <td>2.33</td>
+      <td>2.2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.60</td>
+      <td>-0.60</td>
+      <td>0.12</td>
+      <td>0</td>
+      <td>14</td>
+      <td>8.86</td>
+      <td>5.14</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Collins</td>
+      <td>Brentford</td>
+      <td>4.5</td>
+      <td>1.2</td>
+      <td>57</td>
+      <td>100.00</td>
+      <td>[West Ham, Home]</td>
+      <td>2.33</td>
+      <td>2.4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.55</td>
+      <td>1.45</td>
+      <td>0.11</td>
+      <td>0</td>
+      <td>9</td>
+      <td>11.08</td>
+      <td>-2.08</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Veltman</td>
+      <td>Brighton</td>
+      <td>4.5</td>
+      <td>3.7</td>
+      <td>85</td>
+      <td>95.78</td>
+      <td>[Chelsea, Away]</td>
+      <td>3.67</td>
+      <td>3.6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.54</td>
+      <td>-0.54</td>
+      <td>0.11</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4.89</td>
+      <td>-0.89</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Muñoz</td>
+      <td>Crystal Palace</td>
+      <td>4.9</td>
+      <td>2.8</td>
+      <td>49</td>
+      <td>97.78</td>
+      <td>[Everton, Away]</td>
+      <td>3.00</td>
+      <td>2.8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.48</td>
+      <td>0.52</td>
+      <td>0.10</td>
+      <td>1</td>
+      <td>7</td>
+      <td>8.17</td>
+      <td>-1.17</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Faes</td>
+      <td>Leicester</td>
+      <td>4.1</td>
+      <td>13.4</td>
+      <td>45</td>
+      <td>100.00</td>
+      <td>[Arsenal, Away]</td>
+      <td>3.00</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.46</td>
+      <td>0.54</td>
+      <td>0.09</td>
+      <td>0</td>
+      <td>8</td>
+      <td>8.21</td>
+      <td>-0.21</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Robinson</td>
+      <td>Fulham</td>
+      <td>4.7</td>
+      <td>16.9</td>
+      <td>83</td>
+      <td>100.00</td>
+      <td>[Nott'm Forest, Away]</td>
+      <td>3.33</td>
+      <td>3.0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.45</td>
+      <td>1.55</td>
+      <td>0.09</td>
+      <td>0</td>
+      <td>5</td>
+      <td>5.79</td>
+      <td>-0.79</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Dunk</td>
+      <td>Brighton</td>
+      <td>4.6</td>
+      <td>7.9</td>
+      <td>82</td>
+      <td>96.67</td>
+      <td>[Chelsea, Away]</td>
+      <td>3.67</td>
+      <td>3.6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.44</td>
+      <td>-0.44</td>
+      <td>0.09</td>
+      <td>2</td>
+      <td>4</td>
+      <td>5.84</td>
+      <td>-1.84</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Burn</td>
+      <td>Newcastle</td>
+      <td>4.5</td>
+      <td>12.1</td>
+      <td>38</td>
+      <td>100.00</td>
+      <td>[Man City, Home]</td>
+      <td>3.33</td>
+      <td>3.8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.43</td>
+      <td>-0.43</td>
+      <td>0.09</td>
+      <td>1</td>
+      <td>6</td>
+      <td>8.54</td>
+      <td>-2.54</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Kilman</td>
+      <td>West Ham</td>
+      <td>4.5</td>
+      <td>2.9</td>
+      <td>54</td>
+      <td>100.00</td>
+      <td>[Brentford, Away]</td>
+      <td>2.67</td>
+      <td>2.6</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.38</td>
+      <td>0.62</td>
+      <td>0.08</td>
+      <td>1</td>
+      <td>9</td>
+      <td>10.11</td>
+      <td>-1.11</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Wan-Bissaka</td>
+      <td>West Ham</td>
+      <td>4.5</td>
+      <td>1.8</td>
+      <td>21</td>
+      <td>66.22</td>
+      <td>[Brentford, Away]</td>
+      <td>2.67</td>
+      <td>2.6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.37</td>
+      <td>-0.37</td>
+      <td>0.11</td>
+      <td>0</td>
+      <td>7</td>
+      <td>7.29</td>
+      <td>-0.29</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+        <!-- END TABLE -->
+        </div>
+
+    </div>
+  </section>
+
+  <script src="../../assets/js/script.js"></script>
+  <script src="../../assets/js/sortable.js"></script>
+
+</body>
+</html>

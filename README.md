@@ -1,2 +1,2 @@
 # fpl_auspicate
-FPL predictions using AI
+Repo for hosting content of my site https://thecloudtechnologist.github.io/fpl_auspicate/
