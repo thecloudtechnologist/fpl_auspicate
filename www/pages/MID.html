@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Predicted Points</title>
+  </head>
+  <body>
+    <h1>Gameweek Predicted Points</h1>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <table border="1" class="dataframe table-sm table-hover table-borderless table-responsive">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>team</th>
+      <th>points</th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>index</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>James Maddison</th>
+      <td>Spurs</td>
+      <td>5.211292</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>Bukayo Saka</th>
+      <td>Arsenal</td>
+      <td>5.086190</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>Dwight McNeil</th>
+      <td>Everton</td>
+      <td>4.626377</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <th>Mateo Kovačić</th>
+      <td>Man City</td>
+      <td>4.601681</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Bryan Mbeumo</th>
+      <td>Brentford</td>
+      <td>4.566352</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>Bernardo Veiga de Carvalho e Silva</th>
+      <td>Man City</td>
+      <td>4.516957</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>Son Heung-min</th>
+      <td>Spurs</td>
+      <td>4.510298</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <th>Cole Palmer</th>
+      <td>Chelsea</td>
+      <td>4.395572</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <th>Mohamed Salah</th>
+      <td>Liverpool</td>
+      <td>4.318929</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <th>Brennan Johnson</th>
+      <td>Spurs</td>
+      <td>4.157215</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>Mitoma Kaoru</th>
+      <td>Brighton</td>
+      <td>4.114663</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>Jarrod Bowen</th>
+      <td>West Ham</td>
+      <td>4.084747</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>Dejan Kulusevski</th>
+      <td>Spurs</td>
+      <td>4.040918</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>Callum Hudson-Odoi</th>
+      <td>Nott'm Forest</td>
+      <td>3.957527</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>Wilfred Ndidi</th>
+      <td>Leicester</td>
+      <td>3.923446</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Jack Grealish</th>
+      <td>Man City</td>
+      <td>3.801270</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <th>Gabriel Martinelli Silva</th>
+      <td>Arsenal</td>
+      <td>3.757077</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th>Facundo Buonanotte</th>
+      <td>Leicester</td>
+      <td>3.741223</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Sávio 'Savinho' Moreira de Oliveira</th>
+      <td>Man City</td>
+      <td>3.734804</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>Mikkel Damsgaard</th>
+      <td>Brentford</td>
+      <td>3.715329</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Declan Rice</th>
+      <td>Arsenal</td>
+      <td>3.596709</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Bruno Borges Fernandes</th>
+      <td>Man Utd</td>
+      <td>3.584143</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <th>Jérémy Doku</th>
+      <td>Man City</td>
+      <td>3.557402</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Keane Lewis-Potter</th>
+      <td>Brentford</td>
+      <td>3.526082</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Stephy Mavididi</th>
+      <td>Leicester</td>
+      <td>3.467958</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Eberechi Eze</th>
+      <td>Crystal Palace</td>
+      <td>3.448079</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <th>Anthony Gordon</th>
+      <td>Newcastle</td>
+      <td>3.446651</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>Diogo Teixeira da Silva</th>
+      <td>Liverpool</td>
+      <td>3.422902</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>Morgan Gibbs-White</th>
+      <td>Nott'm Forest</td>
+      <td>3.389843</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Noni Madueke</th>
+      <td>Chelsea</td>
+      <td>3.378530</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>Kevin De Bruyne</th>
+      <td>Man City</td>
+      <td>3.370079</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <th>Andreas Hoelgebaum Pereira</th>
+      <td>Fulham</td>
+      <td>3.313406</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Flynn Downes</th>
+      <td>Southampton</td>
+      <td>3.308570</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Luis Díaz</th>
+      <td>Liverpool</td>
+      <td>3.243057</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <th>Leandro Trossard</th>
+      <td>Arsenal</td>
+      <td>3.236576</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <th>Harvey Barnes</th>
+      <td>Newcastle</td>
+      <td>3.214457</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>Tyler Dibling</th>
+      <td>Southampton</td>
+      <td>3.208795</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>Lewis Cook</th>
+      <td>Bournemouth</td>
+      <td>3.128135</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Anthony Elanga</th>
+      <td>Nott'm Forest</td>
+      <td>3.121721</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Lucas Tolentino Coelho de Lima</th>
+      <td>West Ham</td>
+      <td>3.084301</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>Timo Werner</th>
+      <td>Spurs</td>
+      <td>3.046974</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>Youri Tielemans</th>
+      <td>Aston Villa</td>
+      <td>3.028579</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Alex Iwobi</th>
+      <td>Fulham</td>
+      <td>3.019803</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Marcus Rashford</th>
+      <td>Man Utd</td>
+      <td>3.005763</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <th>Phil Foden</th>
+      <td>Man City</td>
+      <td>2.986854</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <th>Yankuba Minteh</th>
+      <td>Brighton</td>
+      <td>2.978544</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>Alejandro Garnacho</th>
+      <td>Man Utd</td>
+      <td>2.965725</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Emile Smith Rowe</th>
+      <td>Fulham</td>
+      <td>2.963671</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <th>Joelinton Cássio Apolinário de Lira</th>
+      <td>Newcastle</td>
+      <td>2.962648</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>Thomas Partey</th>
+      <td>Arsenal</td>
+      <td>2.941527</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Tomáš Souček</th>
+      <td>West Ham</td>
+      <td>2.937966</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Mario Lemina</th>
+      <td>Wolves</td>
+      <td>2.878607</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Antoine Semenyo</th>
+      <td>Bournemouth</td>
+      <td>2.877811</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <th>Mohammed Kudus</th>
+      <td>West Ham</td>
+      <td>2.868316</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Marcus Tavernier</th>
+      <td>Bournemouth</td>
+      <td>2.859064</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Kevin Schade</th>
+      <td>Brentford</td>
+      <td>2.853550</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Adam Wharton</th>
+      <td>Crystal Palace</td>
+      <td>2.842086</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Adama Traoré</th>
+      <td>Fulham</td>
+      <td>2.773170</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>Jacob Murphy</th>
+      <td>Newcastle</td>
+      <td>2.753261</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Abdoulaye Doucouré</th>
+      <td>Everton</td>
+      <td>2.751872</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Amadou Onana</th>
+      <td>Aston Villa</td>
+      <td>2.730904</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>Bruno Guimarães Rodriguez Moura</th>
+      <td>Newcastle</td>
+      <td>2.729223</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Alexis Mac Allister</th>
+      <td>Liverpool</td>
+      <td>2.685187</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Ryan Yates</th>
+      <td>Nott'm Forest</td>
+      <td>2.682147</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Morgan Rogers</th>
+      <td>Aston Villa</td>
+      <td>2.642541</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Jack Harrison</th>
+      <td>Everton</td>
+      <td>2.620299</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Christian Eriksen</th>
+      <td>Man Utd</td>
+      <td>2.603869</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>Justin Kluivert</th>
+      <td>Bournemouth</td>
+      <td>2.595776</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Enzo Fernández</th>
+      <td>Chelsea</td>
+      <td>2.586178</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Elliot Anderson</th>
+      <td>Nott'm Forest</td>
+      <td>2.580315</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Dominik Szoboszlai</th>
+      <td>Liverpool</td>
+      <td>2.577712</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>Amad Diallo</th>
+      <td>Man Utd</td>
+      <td>2.577103</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Vitaly Janelt</th>
+      <td>Brentford</td>
+      <td>2.567641</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Harry Winks</th>
+      <td>Leicester</td>
+      <td>2.532695</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>Fábio Freitas Gouveia Carvalho</th>
+      <td>Brentford</td>
+      <td>2.531562</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Omari Giraud-Hutchinson</th>
+      <td>Ipswich</td>
+      <td>2.511253</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Jack Hinshelwood</th>
+      <td>Brighton</td>
+      <td>2.424858</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Luis Sinisterra</th>
+      <td>Bournemouth</td>
+      <td>2.416813</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Dango Ouattara</th>
+      <td>Bournemouth</td>
+      <td>2.407141</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Leon Bailey</th>
+      <td>Aston Villa</td>
+      <td>2.372724</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Christian Nørgaard</th>
+      <td>Brentford</td>
+      <td>2.361774</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Curtis Jones</th>
+      <td>Liverpool</td>
+      <td>2.353500</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Ryan Gravenberch</th>
+      <td>Liverpool</td>
+      <td>2.309945</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Jesper Lindstrøm</th>
+      <td>Everton</td>
+      <td>2.304430</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Jordan Ayew</th>
+      <td>Leicester</td>
+      <td>2.301267</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Jadon Sancho</th>
+      <td>Chelsea</td>
+      <td>2.298162</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <th>Sam Morsy</th>
+      <td>Ipswich</td>
+      <td>2.276816</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Carlos Baleba</th>
+      <td>Brighton</td>
+      <td>2.276000</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Reiss Nelson</th>
+      <td>Fulham</td>
+      <td>2.259318</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Moisés Caicedo Corozo</th>
+      <td>Chelsea</td>
+      <td>2.252771</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Rodrigo Bentancur</th>
+      <td>Spurs</td>
+      <td>2.246759</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>James Ward-Prowse</th>
+      <td>Nott'm Forest</td>
+      <td>2.245792</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>Ryan Christie</th>
+      <td>Bournemouth</td>
+      <td>2.229907</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Jean-Ricner Bellegarde</th>
+      <td>Wolves</td>
+      <td>2.223428</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Ismaïla Sarr</th>
+      <td>Crystal Palace</td>
+      <td>2.223382</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <th>Ben Brereton Díaz</th>
+      <td>Southampton</td>
+      <td>2.192543</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Guido Rodríguez</th>
+      <td>West Ham</td>
+      <td>2.153679</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Sandro Tonali</th>
+      <td>Newcastle</td>
+      <td>2.141339</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Saša Lukić</th>
+      <td>Fulham</td>
+      <td>2.114920</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Jacob Ramsey</th>
+      <td>Aston Villa</td>
+      <td>2.076269</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>João Victor Gomes da Silva</th>
+      <td>Wolves</td>
+      <td>2.060256</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Sam Szmodics</th>
+      <td>Ipswich</td>
+      <td>2.048860</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>James Garner</th>
+      <td>Everton</td>
+      <td>2.032191</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Kobbie Mainoo</th>
+      <td>Man Utd</td>
+      <td>2.016177</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Wes Burns</th>
+      <td>Ipswich</td>
+      <td>1.985570</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Raheem Sterling</th>
+      <td>Arsenal</td>
+      <td>1.958917</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <th>Oliver Skipp</th>
+      <td>Leicester</td>
+      <td>1.957185</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Jefferson Lerma Solís</th>
+      <td>Crystal Palace</td>
+      <td>1.932640</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>João Pedro Ferreira Silva</th>
+      <td>Nott'm Forest</td>
+      <td>1.926069</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>Christopher Nkunku</th>
+      <td>Chelsea</td>
+      <td>1.887071</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>Miguel Almirón Rejala</th>
+      <td>Newcastle</td>
+      <td>1.866085</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th>Ross Barkley</th>
+      <td>Aston Villa</td>
+      <td>1.859710</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Jorge Luiz Frello Filho</th>
+      <td>Arsenal</td>
+      <td>1.844419</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Daichi Kamada</th>
+      <td>Crystal Palace</td>
+      <td>1.836145</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Simon Adingra</th>
+      <td>Brighton</td>
+      <td>1.797896</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Yves Bissouma</th>
+      <td>Spurs</td>
+      <td>1.790019</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Pape Matar Sarr</th>
+      <td>Spurs</td>
+      <td>1.767156</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Carlos Henrique Casimiro</th>
+      <td>Man Utd</td>
+      <td>1.758104</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Yasin Ayari</th>
+      <td>Brighton</td>
+      <td>1.743493</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Idrissa Gueye</th>
+      <td>Everton</td>
+      <td>1.711391</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Edson Álvarez Velázquez</th>
+      <td>West Ham</td>
+      <td>1.708450</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Joe Aribo</th>
+      <td>Southampton</td>
+      <td>1.704647</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Yehor Yarmoliuk</th>
+      <td>Brentford</td>
+      <td>1.704258</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <th>Kalvin Phillips</th>
+      <td>Ipswich</td>
+      <td>1.697813</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Pedro Lomba Neto</th>
+      <td>Chelsea</td>
+      <td>1.693777</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>Jaden Philogene</th>
+      <td>Aston Villa</td>
+      <td>1.667671</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Mason Mount</th>
+      <td>Man Utd</td>
+      <td>1.657992</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Jeffrey Schlupp</th>
+      <td>Crystal Palace</td>
+      <td>1.622148</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Gonçalo Manuel Ganchinho Guedes</th>
+      <td>Wolves</td>
+      <td>1.619872</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Crysencio Summerville</th>
+      <td>West Ham</td>
+      <td>1.609708</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <th>Antony Matheus dos Santos</th>
+      <td>Man Utd</td>
+      <td>1.607321</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <th>Mykhailo Mudryk</th>
+      <td>Chelsea</td>
+      <td>1.584032</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>Hwang Hee-chan</th>
+      <td>Wolves</td>
+      <td>1.575829</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>John McGinn</th>
+      <td>Aston Villa</td>
+      <td>1.545179</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Will Hughes</th>
+      <td>Crystal Palace</td>
+      <td>1.536641</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Alex Scott</th>
+      <td>Bournemouth</td>
+      <td>1.532651</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Adam Lallana</th>
+      <td>Southampton</td>
+      <td>1.532257</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Rodrigo Martins Gomes</th>
+      <td>Wolves</td>
+      <td>1.531170</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Joe Willock</th>
+      <td>Newcastle</td>
+      <td>1.494782</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Tim Iroegbunam</th>
+      <td>Everton</td>
+      <td>1.481362</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>Ryan Fraser</th>
+      <td>Southampton</td>
+      <td>1.469843</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Mats Wieffer</th>
+      <td>Brighton</td>
+      <td>1.467424</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Sean Longstaff</th>
+      <td>Newcastle</td>
+      <td>1.462291</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Tom Cairney</th>
+      <td>Fulham</td>
+      <td>1.449150</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Nicolás Domínguez</th>
+      <td>Nott'm Forest</td>
+      <td>1.437643</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Julio Enciso</th>
+      <td>Brighton</td>
+      <td>1.420926</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>Maxwel Cornet</th>
+      <td>Southampton</td>
+      <td>1.386419</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Jack Taylor</th>
+      <td>Ipswich</td>
+      <td>1.385147</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>David Brooks</th>
+      <td>Bournemouth</td>
+      <td>1.326691</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>Lesley Ugochukwu</th>
+      <td>Southampton</td>
+      <td>1.286932</td>
+      <td>45</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
